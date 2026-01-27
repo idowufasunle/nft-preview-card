@@ -1,0 +1,158 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 0;
+}
+.root {
+  /* colors */
+  --blue500: hsl(215, 51%, 70%);
+  --cyan400: hsl(178, 100%, 50%);
+  --blue600: hsl(228, 45%, 44%);
+  --blue900: hsl(216, 50%, 16%);
+  --blue800: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  /* font */
+  font-size: 18px;
+
+  /* font weights */
+  --regular: 300;
+  --semi-bold: 400;
+  --bold: 600;
+
+  /* media query */
+  --mobile: 375px;
+  --desktop: 1440px;
+  min-height: calc(100dvh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue800);
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+}
+
+/* font-weight */
+.inter-300 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-600 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.equilibrium_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  width: 375px;
+  padding-block: 16px;
+  /* max-width: clamp(250px, 90%, 400px); */
+
+  background-color: var(--blue900);
+  color: var(--blue500);
+}
+
+.equilibrium_wrapper .equilibrium_1 {
+  flex: 1;
+}
+
+.equilibrium_wrapper .equilibrium_2 {
+  flex: 3;
+  padding-inline: 18px;
+}
+
+.equilibrium_wrapper .equilibrium_1 .equilibrium_image {
+  /* margin-block: 16px;
+     overflow: hidden;
+    max-width: 100%;  */
+  /* position: relative; */
+
+  /* height: 100%;
+    width: 100%;
+    aspect-ratio:unset; */
+
+  aspect-ratio: 1;
+  width: 350px;
+  max-width: 350px;
+  position: relative;
+}
+
+.equilibrium_wrapper .equilibrium_1 .equilibrium_image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.equilibrium_wrapper .equilibrium_2 .equilibrium_header {
+  font-weight: var(--bold);
+  font-size: 22px;
+  color: var(--white);
+  margin: 16px;
+}
+
+.equilibrium_wrapper .equilibrium_2 .equilibrium_info {
+  font-weight: var(--semi-bold);
+  margin: 8px;
+}
+
+.equilibrium_wrapper .equilibrium_2 .equilibrium_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+}
+
+.equilibrium_wrapper .equilibrium_2 .equilibrium_details .equilibrium_digits {
+  font-weight: var(--bold);
+  color: var(--cyan400);
+}
+
+.equilibrium_wrapper .equilibrium_2 .equilibrium_time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: var(--semi-bold);
+  color: var(--white);
+}
+
+.equilibrium_wrapper .equilibrium_2 .equilibrium_creator {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+.equilibrium_wrapper .equilibrium_2 .equilibrium_creator .creator {
+  border-top: 1px solid var(--blue800);
+  font-weight: var(--semi-bold);
+  color: var(--white);
+  margin: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .equilibrium_wrapper {
+    width: 400px;
+  }
+}
